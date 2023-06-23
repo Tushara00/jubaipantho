@@ -4,77 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
+    <style>
+        #menu li {
+            padding: 2rem 1.2rem;
+        }
+        #menu{
+            display:flex;
+            justify-content: center;
+        }
+         #remove{
+            color:white;
+ display:none;
+ padding:2rem;
+        }
+        .bar{
+color:white;
+ display:none;
+ padding:2rem;
+        }
+        @media only screen and (max-width:1000px){
+            .bar{
+                display:block;
+            }
+            #menu{
+                display:none;
+            }
+        }
+        </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="main">
-            <ul>
-                <li><a href="">about</a></li>
-                <li><a href="">education & experience</a></li>
-                <li><a href="">research & projects</a></li>
-                <li><a href="">skills & presentations</a></li>
-                <li><a href="">award & achievement</a></li>
-                <li><a href="">travel & photography</a></li>
-                <li><a href="">contact</a></li>
-                
+    <header class="header">
+        <div class="fas fa-bars bar" id="bar"></div>
+        <div class="fas fa-remove" id="remove"></div>
+        <nav >         
+            <ul >
+                <div id="menu">
+                <li class="nav-link"><a href="">about</a></li>
+                <li class="nav-link"><a href="">education & experience</a></li>
+                <li class="nav-link"><a href="">research & projects</a></li>
+                <li class="nav-link"><a href="">skills & presentations</a></li>
+                <li class="nav-link"><a href="">award & achievement</a></li>
+                <li class="nav-link"><a href="">travel & photography</a></li>
+                <li class="nav-link"><a href="">contact</a></li> 
+            </div>             
             </ul>
         </nav>
     </header>
+
      <div class="hero-banner">
         <img src="assets/images/IMG_1.jpg" class="image" id="myImage"> 
      </div>
-    </div>
+  
     <script>
-        var Image = [
-        'assets/images/IMG_1.jpg',
-        'assets/images/IMG_2.jpg',
-        'assets/images/IMG_3.jpg'
-    ];
+      var bar = document.getElementById("bar");
+        var menu = document.getElementById("menu");
+        var remove = document.getElementById("remove")
+console.log(bar)
+        bar.addEventListener("click", function(){
+            menu.style.display = "block";
+            bar.style.display = "none";
+            remove.style.display="block";
+        })
 
-    var myImage = document.getElementById("myImage");
-    var count_index = 0;
-
-    function fadeIn() {
-        var opacity = .5;
-        myImage.style.opacity = opacity;
-
-        var fadeInInterval = setInterval(function() {
-            if (opacity >= 1) {
-                clearInterval(fadeInInterval);
-            } else {
-                opacity += 0.01;
-                myImage.style.opacity = opacity;
-            }
-        }, 10); // Adjust the interval time for a smoother fade effect
-    }
-
-    function fadeOut() {
-        var opacity = 1;
-
-        var fadeOutInterval = setInterval(function() {
-            if (opacity <= 0) {
-                clearInterval(fadeOutInterval);
-                myImage.src = Image[count_index];
-                fadeIn();
-                count_index++;
-                if (count_index >= Image.length) {
-                    count_index = 0;
-                }
-            } else {
-                opacity -= 0.05;
-                myImage.style.opacity = opacity;
-            }
-        }, 10); // Adjust the interval time for a smoother fade effect
-    }
-
-    function image_change() {
-        fadeOut();
-        setTimeout(image_change, 10000);
-    }
-
-    window.onload = image_change();
+        remove.addEventListener("click", function(){
+            menu.style.display = "none";
+            bar.style.display = "block";
+            remove.style.display="none";
+        })
     </script>
+   
 </body>
 </html>
