@@ -2,8 +2,8 @@
 
 var Image = [
     'assets/images/IMG_1.jpg',
-    'assets/images/IMG_2.jpg',
-    'assets/images/IMG_3.jpg'
+    'assets/images/IMG_3.jpg',
+    'assets/images/IMG_4.jpg'
 ];
 
 var myImage = document.getElementById("myImage");
@@ -44,7 +44,7 @@ function fadeOut() {
 
 function image_change() {
     fadeOut();
-    setTimeout(image_change, 80000);
+    setTimeout(image_change, 5000);
 }
 
 window.onload = image_change();
