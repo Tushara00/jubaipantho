@@ -2,8 +2,8 @@
 
 var Image = [
     'assets/images/IMG_1.jpg',
-    'assets/images/IMG_3.jpg',
-    'assets/images/IMG_4.jpg'
+    'assets/images/IMG_4.jpg',
+    'assets/images/IMG_3.jpg'
 ];
 
 var myImage = document.getElementById("myImage");
