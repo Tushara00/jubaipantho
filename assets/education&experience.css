@@ -26,7 +26,7 @@ p{
 .right{
     background:#171717;
    width:500px;
-  padding: 1.5rem 2rem; 
+  padding: 2rem 2rem; 
    border-radius: 10px;
 }
 h1{
@@ -101,11 +101,13 @@ p{
 /*education*/
 .left, .right ul li {
     color:white;
-    list-style: disc!important;
+   
     font-size: 18px;
 }
-.left li{
-    list-style: disc !important;
+
+.right li{
+    color:white;
+    font-size: 18px;
 }
 span{
     color:white!important;
@@ -135,6 +137,9 @@ line-height: 21px;
 }
 .top-footer .right a{
     font-size: 16px;
+}
+.top-footer li{
+    list-style: disc!important;
 }
  a:hover:not(.top-footer):before{
     content:"";
@@ -180,5 +185,9 @@ line-height: 21px;
     }
     .top-footer .right{
         padding-top:1rem;
+    }
+    .main-content h2{
+        font-size:20px;
+
     }
   }

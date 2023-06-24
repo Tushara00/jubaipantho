@@ -132,13 +132,13 @@ ul li a:hover:before{
 padding-bottom:.8rem;
      }
      .social-icon a{
-        padding:0 .5rem ;
+       
      }
      .social-icon i{
         font-size: 25px;
         color:white;
       
-        padding:;
+        padding: 1rem;
         border-radius: 50px;
         text-align: center;
     
