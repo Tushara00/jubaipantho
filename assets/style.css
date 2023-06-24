@@ -28,7 +28,8 @@ html {
    background-color: #000000;
  }
 nav{  
-    padding:1rem 0;  
+    padding:1rem 0; 
+     
 }
 li.nav-item a{
     color:#b6babf!important;
@@ -46,7 +47,8 @@ li.nav-item a{
 
  .navbar-custom{
     background-color: black !important;
-    z-index: 90000;;
+    
+
 
  }
  .navbar-toggler{
@@ -101,32 +103,42 @@ ul li a:hover:before{
   .hero-banner{
     position:relative;
    }
-   .hero-text{
+   
+   .hero-text{    
+      position:absolute;
+      z-index: 10000;
+      color:white;
+      text-align: center;  
       top:50%;
       left:50%;
       transform:translate(-50%,-50%);
       position:absolute;
       z-index: 10000;
-      color:white;
-     
+      color:white;      
    }
+   
+  
    .hero-text h3{
+      
     font-size: 21px;
-    color:black;
+   text-align: center;
     padding-top:2rem;
+    text-shadow: 1px 1px 3px #000;
    }
    .hero-text h1{
-    font-size: 48px;
+      text-shadow: 1px 1px 3px #000;
+    font-size: 58px;
     text-align: center;
-    color:#000000;
+   
     font-weight: bold;
     position: relative;
+    
    }
 .hero-text h1:before{
 content:"";
 width:80px;
 height:2px;
-background-color:black;
+background-color:white;
 bottom:-10px;
 position:absolute;
 left:50%;

@@ -8,9 +8,15 @@
   @media only screen and (max-width: 792px) {
     .hero-text h1{
         font-size:35px;
+        text-shadow: 1px 1px 3px #000;
     }
     
     .hero-text h3{
 font-size: 18px;
+text-shadow: 1px 1px 3px #000;
     }
+
+    .hero-text{
+        
+     }
   }
