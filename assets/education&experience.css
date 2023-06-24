@@ -162,8 +162,15 @@ line-height: 21px;
     .cv{
         padding:1rem;
     }
+    .cv button{
+        padding: 1rem 4rem;
+    }
     .top-footer .right h4{
         font-size: 16px;
+        
+    }
+    .top-footer .right h2{
+       line-height: 30px!important;
         
     }
     .top-footer .right{
