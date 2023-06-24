@@ -24,7 +24,9 @@ html {
    
     scroll-behavior: smooth;
 }
-
+ body{
+   background-color: #000000;
+ }
 nav{  
     padding:1rem 0;  
 }
@@ -129,7 +131,7 @@ ul li a:hover:before{
      .social-icon{
         display:flex;
         justify-content: center;
-padding-bottom:.8rem;
+padding-bottom:.5rem;
      }
      .social-icon a{
        
@@ -138,7 +140,7 @@ padding-bottom:.8rem;
         font-size: 25px;
         color:white;
       
-        padding: 1rem;
+        padding:0 1rem;
         border-radius: 50px;
         text-align: center;
     
