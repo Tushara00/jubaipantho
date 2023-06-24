@@ -3,7 +3,10 @@
 var Image = [
     'assets/images/IMG_1.jpg',
     'assets/images/IMG_4.jpg',
-    'assets/images/IMG_3.jpg'
+    'assets/images/IMG_3.jpg',
+    'assets/images/IMG_5.jpg',
+    'assets/images/IMG_6.jpg',
+    'assets/images/IMG_8.jpg'
 ];
 
 var myImage = document.getElementById("myImage");
