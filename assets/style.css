@@ -195,6 +195,26 @@ a:hover:not(.top-footer):before {
    width: 0px;
 }
 
+.left,
+.right{
+    background:#171717;
+   width:500px;
+  padding: 2rem 2rem; 
+   border-radius: 10px;
+}
+
+.right li{
+   color:white;
+   font-size: 18px;
+}
+
+h4{
+   color:#A8A8A8;
+   font-size: 16px;
+   font-weight:500px;
+   line-height: 9px;
+}
+
 /* end top footer */
 /* bottom footer start*/
 .footer {

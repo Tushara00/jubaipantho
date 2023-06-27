@@ -1,0 +1,17 @@
+.travel_photography_banner{
+    background-image:url(images/IMG_8.jpg);
+    height:400px;
+    background-size:cover;
+    background-position: center;
+    position:relative;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.7);
+
+}
