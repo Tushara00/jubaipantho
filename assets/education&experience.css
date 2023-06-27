@@ -31,17 +31,18 @@ p{
 }
 
 .education, .experience{
-    background:#171717;
-  
+    background:#171717; 
    padding: 2rem 7rem; 
     border-radius: 10px;
 }
 .institution_logo img{
     width:80px;height:80px;
 }
+.institution_logo{
+    margin-top:3rem!important;
+}
 .education, .experience ul li {
-    color:white;
-   
+    color:white; 
     font-size: 18px;
 }
 

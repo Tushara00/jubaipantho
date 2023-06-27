@@ -21,6 +21,9 @@ text-shadow: 1px 1px 3px #000;
 
 /* start award & education media*/
 @media only screen and (max-width: 792px) {
+    .education, .experience{
+        padding: 2rem 2rem;
+    }
     .left,
     .right {
       width: 100%;
