@@ -51,3 +51,10 @@ function image_change() {
 }
 
 window.onload = image_change();
+
+//copyright year
+const currentYear = new Date().getFullYear();
+console.log(currentYear);
+var copyright_year = document.getElementById("copyright_year");
+
+copyright_year.textContent= currentYear  

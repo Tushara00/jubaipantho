@@ -55,10 +55,9 @@ li.nav-item a:hover {
 }
 
 .navbar-custom {
-   background-color: black !important;
-
-
-
+   background-color: black !important; 
+      border-bottom: .5px solid white;
+      z-index: 90000;;
 }
 
 .navbar-toggler {
@@ -202,7 +201,7 @@ a:hover:not(.top-footer):before {
    background-color: black;
    padding: 2rem;
    border-top: 1px solid white;
-
+   width:100%;
 }
 
 .social-icon {
