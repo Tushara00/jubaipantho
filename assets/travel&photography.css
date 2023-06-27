@@ -15,3 +15,37 @@
     background-color:rgba(0,0,0,.7);
 
 }
+
+.travel_photography{
+    display:flex;
+    flex-wrap: wrap; 
+   gap:1rem;
+ padding:3rem 0 5rem 0;
+   
+}
+.travel_photography img{
+    width:100%;
+    object-fit: cover;
+    height:300px;
+border-radius: 5px 5px 0 0;
+}
+.travel_img{
+    width:calc(33.33% - (2rem/3));
+    height:300px;
+margin-bottom: 3rem;;
+
+}
+.travel_photography .container{
+    background-color: white;
+    
+}
+
+.travel_photography .container p{
+    padding:.3rem 0;
+}
+@media only screen and (max-width:792px){
+  .travel_img{
+    width:calc(50% - (2rem/3));
+    height:300px;
+  }  
+}
