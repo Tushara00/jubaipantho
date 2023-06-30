@@ -4,7 +4,9 @@ h4 {
     color: blue;
 
 }
-
+h2{
+    font-size: 18px;
+}
 .publications {
     padding: 7rem 7rem;
 }
@@ -23,8 +25,12 @@ h4 {
     padding-top: 7rem;
 }
 
+.content-2 h2:nth-child(1){
+  text-transform: uppercase;
+}
+
 @media only screen and (max-width:792px){
     .publications {
-        padding: 7rem 1rem;
+        padding: 7rem 2rem;
     } 
 }
