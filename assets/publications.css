@@ -22,3 +22,9 @@ h4 {
 .content-2 {
     padding-top: 7rem;
 }
+
+@media only screen and (max-width:792px){
+    .publications {
+        padding: 1rem 7rem;
+    } 
+}
