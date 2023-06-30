@@ -35,8 +35,15 @@ p {
     background: #171717;
     padding: 2rem 17rem 5rem;
     border-radius: 10px;
+  
+}
+.education{
+    margin-top:4rem;
 }
 
+.experience{
+    margin-bottom:7rem;
+}
 .institution_logo img {
     width: 80px;
     height: 80px;
