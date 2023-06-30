@@ -39,4 +39,5 @@ p {
     font-size: 18px;
     padding: 2rem 0;
     text-align: justify;
+    text-justify: distribute;
 }
