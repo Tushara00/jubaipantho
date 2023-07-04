@@ -56,3 +56,5 @@ console.log(currentYear);
 var copyright_year = document.getElementById("copyright_year");
 
 copyright_year.textContent = currentYear;
+
+

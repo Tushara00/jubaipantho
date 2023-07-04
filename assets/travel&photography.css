@@ -65,3 +65,19 @@
     font-size: 38px !important;
   }
 }
+
+
+/* slider*/
+#slider {
+  width:1320px;
+  overflow: hidden;
+}
+
+#slider img {
+  width:100%;
+  height:auto;
+  transition:transform .5s ease-in-out;
+}
+
+
+

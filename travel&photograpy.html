@@ -17,9 +17,44 @@
   <link rel="stylesheet" href="assets/media.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="assets/style.css">
-
 </head>
+<style>
 
+.image {
+   width: 100%;
+   height: 70vh;
+   object-fit: cover;
+}
+
+.hero-banner {
+
+  margin-bottom: 5rem !important;
+  border:12px solid white;
+  border-radius: 5px;;
+  width:70vw;
+   position: relative;
+   margin:auto;
+}
+.slider-content{
+  text-align: center;
+  color:blue;
+  margin: 5rem 0;
+  position:relative;
+}
+.slider-content h1{
+  font-size: 48px;
+}
+.slider-content h1:before {
+   content: "";
+   width: 80px;
+   height: 2px;
+   background-color: blue;
+   bottom: -7px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%)
+}
+</style>
 <body>
   <!--start navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
@@ -65,64 +100,17 @@
         <h1>Travel & Photography </h1>
       </div>
     </div>
-
-    <div class="travel_photography">
-      <div class="travel_img">
-        <img src="assets/images/IMG_1.jpg" alt="5 Terre" style=>
-        <div class="container">
-          <p>Image caption</p>
-        </div>
-      </div>
-      <div class="travel_img">
-        <img src="assets/images/IMG_2.jpg" alt="5 Terre" style=>
-        <div class="container">
-          <p>Image caption</p>
-        </div>
-      </div>
-      <div class="travel_img">
-        <img src="assets/images/IMG_3.jpg" alt="5 Terre" style=>
-        <div class="container">
-          <p>Image caption</p>
-        </div>
-      </div>
-      <div class="travel_img">
-        <img src="assets/images/IMG_4.jpg" alt="5 Terre" style=>
-        <div class="container">
-          <p>Image caption</p>
-        </div>
-      </div>
-      <div class="travel_img">
-        <img src="assets/images/IMG_5.jpg" alt="5 Terre" style=>
-        <div class="container">
-          <p>Image caption</p>
-        </div>
-      </div>
-
-      <div class="travel_img">
-        <img src="assets/images/IMG_6.jpg" alt="5 Terre" style=>
-        <div class="container">
-          <p>Image caption</p>
-        </div>
-      </div>
-      <div class="travel_img">
-        <img src="assets/images/IMG_7.jpg" alt="5 Terre" style=>
-        <div class="container">
-          <p>Image caption</p>
-        </div>
-      </div>
-      <div class="travel_img">
-        <img src="assets/images/IMG_8.jpg" alt="5 Terre" style=>
-        <div class="container">
-          <p>Image caption</p>
-        </div>
-      </div>
-    </div>
-
-
     <!--end content-->
 
- 
-
+     <!--start slider-->
+     <div class="slider-content"><h1>North Caroline</h1></div>
+     <div class="hero-banner">
+      
+      <img src="assets/images/IMG_1.jpg" class="image" id="myImage">
+    </div>   
+  
+</div>
+     <!--end slider-->
     <!--start bottom footer-->
     <div class="footer">
       <div class="social-icon">
@@ -138,10 +126,62 @@
     <!--end bottom footer-->
   </div>
   <!--js files-->
+<script>
+  var Image = [
+  "assets/images/IMG_1.jpg",
+  "assets/images/IMG_4.jpg",
+  "assets/images/IMG_3.jpg",
+  "assets/images/IMG_5.jpg",
+  "assets/images/IMG_6.jpg",
+  "assets/images/IMG_8.jpg",
+];
+
+var myImage = document.getElementById("myImage");
+var count_index = 0;
+
+function fadeIn() {
+  var opacity = 0.5;
+  myImage.style.opacity = opacity;
+
+  var fadeInInterval = setInterval(function () {
+    if (opacity >= 1) {
+      clearInterval(fadeInInterval);
+    } else {
+      opacity += 0.01;
+      myImage.style.opacity = opacity;
+    }
+  }, 10); // Adjust the interval time for a smoother fade effect
+}
+
+function fadeOut() {
+  var opacity = 1;
+
+  var fadeOutInterval = setInterval(function () {
+    if (opacity <= 0) {
+      clearInterval(fadeOutInterval);
+      myImage.src = Image[count_index];
+      fadeIn();
+      count_index++;
+      if (count_index >= Image.length) {
+        count_index = 0;
+      }
+    } else {
+      opacity -= 0.05;
+      myImage.style.opacity = opacity;
+    }
+  }, 10); // Adjust the interval time for a smoother fade effect
+}
+
+function image_change() {
+  fadeOut();
+  setTimeout(image_change, 5000);
+}
+</script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="assets/main.js"></script>
+    <script src="assets/main.js"></script>
 </body>
 
 </html>
