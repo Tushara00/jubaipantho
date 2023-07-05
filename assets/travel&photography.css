@@ -13,7 +13,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .7);
-
 }
 
 .travel_photography {
@@ -21,7 +20,6 @@
   flex-wrap: wrap;
   gap: 1rem;
   padding: 3rem 0 5rem 0;
-
 }
 
 .main-content {
@@ -46,7 +44,6 @@
 
 .travel_photography .container {
   background-color: white;
-
 }
 
 .travel_photography .container p {
@@ -66,17 +63,46 @@
   }
 }
 
-
 /* slider*/
-#slider {
-  width:1320px;
-  overflow: hidden;
+.image {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  margin-top:0 !important;
 }
 
-#slider img {
-  width:100%;
-  height:auto;
-  transition:transform .5s ease-in-out;
+.hero-banner {
+ margin-bottom: 5rem !important;
+ border:12px solid white;
+ border-radius: 5px;;
+width:70%;
+  margin:auto;
+}
+.slider-content{
+ text-align: center;
+ color:blue;
+ margin: 5rem 0;
+ position:relative;
+}
+.slider-content h1{
+ font-size: 48px;
+}
+.slider-content h1:before {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: blue;
+  bottom: -7px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+@media only screen and (max-width: 792px){
+ .hero-banner{
+   height:auto; 
+   width:100%;
+ }
 }
 
 

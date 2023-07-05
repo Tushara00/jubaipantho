@@ -2,7 +2,9 @@ body {
     background-color: black;
 
 }
-
+.navbar-custom {
+    border-bottom: .5px solid rgba(255, 255, 255, 0.288);
+  }
 .main-content {
     background-color: black;
 }
@@ -131,7 +133,7 @@ p {
 }
 
 .cv button {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.288);
     background-color: transparent;
     padding: 1rem 13rem;
     color: white;
@@ -160,4 +162,29 @@ span {
 }
 
 
-/*top-footer*/
+.test_scores h2{
+text-align: center;
+margin: 2rem 0 4rem;
+}
+
+.test_scores h2:before{
+    content: "";
+   width: 80px;
+   height: 1px;
+   background-color: white;
+   bottom: -10px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%) 
+}
+
+.test_scores h3{
+    font-size: 21px;
+    color:white;
+    padding-bottom: .5rem;
+}
+
+.test_scores h4{
+    font-size: 16px;
+    line-height: 1.3rem;
+}

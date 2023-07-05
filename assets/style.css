@@ -24,7 +24,6 @@
 html {
    font-size: 82.5%;
    overflow-x: hidden;
-
    scroll-behavior: smooth;
 }
 
@@ -34,7 +33,6 @@ body {
 
 nav {
    padding: 1rem 0;
-
 }
 
 li.nav-item a {
@@ -46,7 +44,6 @@ li.nav-item a:hover {
 }
 
 #navbarNav {
-
    justify-content: center;
 }
 
@@ -55,14 +52,12 @@ li.nav-item a:hover {
 }
 
 .navbar-custom {
-   background-color: black !important; 
-      
+   background-color: black !important;     
       z-index: 90000;;
 }
 
 .navbar-toggler {
-   background-color: blue;
-   
+   background-color: blue;  
 }
 
 .navbar-brand {
@@ -145,7 +140,6 @@ ul li a:hover:before {
    text-align: center;
    font-weight: bold;
    position: relative;
-
 }
 
 .hero-text h1:before {
